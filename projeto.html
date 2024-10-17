@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tarefa Iuri</title>
+   <style>
+      body {
+         background-color: #d3d3d3; /* BG do body cinza */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+      }
+
+      .box {
+         background-color: white; /* Box branca */
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+         text-align: center;
+         font-family: Arial, sans-serif;
+      }
+
+      button {
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 16px;
+      }
+
+      button:hover {
+         background-color: #45a049; /* Cor mais escura ao passar o mouse */
+      }
+
+      p {
+         font-size: 24px;
+         margin-bottom: 15px;
+      }
+   </style>
+</head>
+<body>
+   <div class="box">
+      <div>
+         <p id="number">0</p>
+         <button onclick="incrementNumber()">Clique aqui!</button>
+      </div>
+   </div>
+
+   <script>
+      let number = 0;
+
+      function incrementNumber() {
+         number++;
+         document.getElementById('number').textContent = number;
+      }
+   </script>
+</body>
+</html>
